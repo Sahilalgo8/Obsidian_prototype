@@ -1,0 +1,52 @@
+﻿# SupplyChain Module
+
+Demand, SIOP, capacity, schedules, inventory, suppliers, logistics and traceability.
+
+Contains 43 classes (see [[Appendix B Complete starter class catalog|Appendix B]] for the full catalog).
+
+
+## Classes
+
+- [[DemandSignal]] (SUP-001)
+- [[Forecast]] (SUP-002)
+- [[CustomerOrder]] (SUP-003)
+- [[DeliveryCommitment]] (SUP-004)
+- [[SIOPCycle]] (SUP-005)
+- [[SIOPScenario]] (SUP-006)
+- [[DemandPlan]] (SUP-007)
+- [[SupplyPlan]] (SUP-008)
+- [[FinancialPlan]] (SUP-009)
+- [[Capacity]] (SUP-010)
+- [[CapacityRequirement]] (SUP-011)
+- [[ConstraintResource]] (SUP-012)
+- [[FiniteSchedule]] (SUP-013)
+- [[SequenceRule]] (SUP-014)
+- [[InventoryPosition]] (SUP-015)
+- [[RawMaterialInventory]] (SUP-016)
+- [[WorkInProcessInventory]] (SUP-017)
+- [[FinishedGoodsInventory]] (SUP-018)
+- [[SparePartsInventory]] (SUP-019)
+- [[WIPBuffer]] (SUP-020)
+- [[SafetyStockPolicy]] (SUP-021)
+- [[StockoutRisk]] (SUP-022)
+- [[Supplier]] (SUP-023)
+- [[SupplierCapability]] (SUP-024)
+- [[SupplierPerformance]] (SUP-025)
+- [[PurchaseOrder]] (SUP-026)
+- [[Shipment]] (SUP-027)
+- [[ReceivingEvent]] (SUP-028)
+- [[TransformationEvent]] (SUP-029)
+- [[AggregationEvent]] (SUP-030)
+- [[ShippingEvent]] (SUP-031)
+- [[LogisticsLane]] (SUP-032)
+- [[TransportResource]] (SUP-033)
+- [[OTIFRisk]] (SUP-034)
+- [[SupplyException]] (SUP-035)
+- [[NetworkAllocationDecision]] (SUP-036)
+- [[MakeBuyDecision]] (SUP-037)
+- [[InventoryPolicyDecision]] (SUP-038)
+- [[ProductionSequenceDecision]] (SUP-039)
+- [[CustomerPriorityRule]] (SUP-040)
+- [[SupplyChainEvent]] (SUP-041)
+- [[BusinessStep]] (SUP-042)
+- [[DispositionCode]] (SUP-043)

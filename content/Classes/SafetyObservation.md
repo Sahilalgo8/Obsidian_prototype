@@ -1,0 +1,12 @@
+---
+code: ESG-029
+module: ESG_EHS
+parent: "[[Observation]]"
+alignment: ISO 14001 / ISO 50001 / ISO 45001 / ISO 14040-44-67 / GHG Protocol
+---
+
+Observed safe or unsafe condition or behavior.
+
+**Parent:** [[Observation]]
+
+**Module:** [[ESG_EHS Module|ESG_EHS]]

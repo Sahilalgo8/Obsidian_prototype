@@ -1,0 +1,12 @@
+---
+code: MNT-002
+module: Maintenance
+parent: "[[ProcessType]]"
+alignment: ISO 14224 / ISO 13374 / ISO 13379 / ISO 17359 / IOF Maintenance / IEC 62682
+---
+
+Physical, chemical or logical process causing degradation or failure.
+
+**Parent:** [[ProcessType]]
+
+**Module:** [[Maintenance Module|Maintenance]]

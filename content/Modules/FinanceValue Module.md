@@ -1,0 +1,51 @@
+﻿# FinanceValue Module
+
+Costs, losses, KPIs, value trees, benefits, capital and economic priority.
+
+Contains 42 classes (see [[Appendix B Complete starter class catalog|Appendix B]] for the full catalog).
+
+
+## Classes
+
+- [[FinancialAccount]] (FIN-001)
+- [[CostCenter]] (FIN-002)
+- [[CostObject]] (FIN-003)
+- [[CostElement]] (FIN-004)
+- [[StandardCost]] (FIN-005)
+- [[ActualCost]] (FIN-006)
+- [[CostVariance]] (FIN-007)
+- [[Revenue]] (FIN-008)
+- [[ContributionMargin]] (FIN-009)
+- [[EBITDAImpact]] (FIN-010)
+- [[CashImpact]] (FIN-011)
+- [[WorkingCapital]] (FIN-012)
+- [[LossEvent]] (FIN-013)
+- [[LossCategory]] (FIN-014)
+- [[ScrapCost]] (FIN-015)
+- [[ReworkCost]] (FIN-016)
+- [[DowntimeCost]] (FIN-017)
+- [[EnergyCost]] (FIN-018)
+- [[PremiumFreightCost]] (FIN-019)
+- [[CustomerRiskExposure]] (FIN-020)
+- [[KPI]] (FIN-021)
+- [[KPIObservation]] (FIN-022)
+- [[ValueTree]] (FIN-023)
+- [[BenefitCase]] (FIN-024)
+- [[ValidatedBenefit]] (FIN-025)
+- [[CapitalProject]] (FIN-026)
+- [[CapitalAsset]] (FIN-027)
+- [[PaybackPeriod]] (FIN-028)
+- [[NetPresentValue]] (FIN-029)
+- [[ReturnOnInvestment]] (FIN-030)
+- [[ContributionPerConstraintHour]] (FIN-031)
+- [[CostPerGoodTon]] (FIN-032)
+- [[GoodTonsShipped]] (FIN-033)
+- [[FirstPassYield]] (FIN-034)
+- [[MetalYield]] (FIN-035)
+- [[ScheduleAdherence]] (FIN-036)
+- [[OnTimeInFull]] (FIN-037)
+- [[EnergyPerGoodTon]] (FIN-038)
+- [[EconomicPriority]] (FIN-039)
+- [[CounterfactualBaseline]] (FIN-040)
+- [[ValueAttribution]] (FIN-041)
+- [[BenefitOwner]] (FIN-042)

@@ -1,0 +1,133 @@
+# Relationship Index
+
+All 120 relationship types from Appendix C, for quick scanning.
+
+```dataview
+TABLE domain, range, characteristics
+FROM "Relationships"
+WHERE file.name != "00 Relationship Index"
+SORT code ASC
+```
+
+| Code | Property | Domain | Range |
+|---|---|---|---|
+| REL-001 | [[partOf\|partOf]] | Entity | Entity |
+| REL-002 | [[hasPart\|hasPart]] | Entity | Entity |
+| REL-003 | [[locatedAt\|locatedAt]] | Entity | SpatialRegion |
+| REL-004 | [[hasIdentifier\|hasIdentifier]] | Entity | Identifier |
+| REL-005 | [[classifiedAs\|classifiedAs]] | Entity | ControlledConcept |
+| REL-006 | [[hasType\|hasType]] | Entity | InformationObject |
+| REL-007 | [[broaderConcept\|broaderConcept]] | ControlledConcept | ControlledConcept |
+| REL-008 | [[narrowerConcept\|narrowerConcept]] | ControlledConcept | ControlledConcept |
+| REL-009 | [[relatedConcept\|relatedConcept]] | ControlledConcept | ControlledConcept |
+| REL-010 | [[equivalentExternalConcept\|equivalentExternalConcept]] | ControlledConcept | ControlledConcept |
+| REL-011 | [[hasComponent\|hasComponent]] | Asset | Asset |
+| REL-012 | [[connectedTo\|connectedTo]] | Asset | Asset |
+| REL-013 | [[feeds\|feeds]] | Asset | Asset |
+| REL-014 | [[upstreamOf\|upstreamOf]] | Entity | Entity |
+| REL-015 | [[downstreamOf\|downstreamOf]] | Entity | Entity |
+| REL-016 | [[controls\|controls]] | Controller | Asset |
+| REL-017 | [[monitoredBy\|monitoredBy]] | Entity | Sensor |
+| REL-018 | [[hasCapability\|hasCapability]] | Entity | Capability |
+| REL-019 | [[requiresCapability\|requiresCapability]] | ProcessType | Capability |
+| REL-020 | [[realizesProcessType\|realizesProcessType]] | ProcessExecution | ProcessType |
+| REL-021 | [[hasProcessSegment\|hasProcessSegment]] | OperationsDefinition | ProcessSegment |
+| REL-022 | [[precedes\|precedes]] | ProcessType | ProcessType |
+| REL-023 | [[directlyPrecedes\|directlyPrecedes]] | ProcessType | ProcessType |
+| REL-024 | [[occursAt\|occursAt]] | ProcessExecution | Asset |
+| REL-025 | [[occursDuring\|occursDuring]] | ProcessExecution | TimeInterval |
+| REL-026 | [[executedBy\|executedBy]] | ProcessExecution | Person |
+| REL-027 | [[usesEquipment\|usesEquipment]] | ProcessExecution | Equipment |
+| REL-028 | [[usesTooling\|usesTooling]] | ProcessExecution | Tooling |
+| REL-029 | [[consumes\|consumes]] | ProcessExecution | Material |
+| REL-030 | [[produces\|produces]] | ProcessExecution | Material |
+| REL-031 | [[transformsInputToOutput\|transformsInputToOutput]] | ProcessExecution | Material |
+| REL-032 | [[hasRecipe\|hasRecipe]] | ProductDefinition | Recipe |
+| REL-033 | [[hasProcedure\|hasProcedure]] | Recipe | Procedure |
+| REL-034 | [[hasPhase\|hasPhase]] | Procedure | Phase |
+| REL-035 | [[hasParameter\|hasParameter]] | Entity | ProcessParameter |
+| REL-036 | [[governedByWindow\|governedByWindow]] | ProcessExecution | ProcessWindow |
+| REL-037 | [[producedByHeat\|producedByHeat]] | CastingPart | Heat |
+| REL-038 | [[castInMoldCycle\|castInMoldCycle]] | CastingPart | MoldCycle |
+| REL-039 | [[usesCoreLot\|usesCoreLot]] | CastingPart | MaterialLot |
+| REL-040 | [[pouredInEvent\|pouredInEvent]] | CastingPart | PourEvent |
+| REL-041 | [[fulfillsOrder\|fulfillsOrder]] | CastingPart | CustomerOrder |
+| REL-042 | [[containedInShipment\|containedInShipment]] | CastingPart | Shipment |
+| REL-043 | [[observesProperty\|observesProperty]] | Observation | ObservedProperty |
+| REL-044 | [[hasFeatureOfInterest\|hasFeatureOfInterest]] | Observation | Entity |
+| REL-045 | [[madeBySensor\|madeBySensor]] | Observation | Sensor |
+| REL-046 | [[usedProcedure\|usedProcedure]] | Observation | ObservationProcedure |
+| REL-047 | [[hasResult\|hasResult]] | Observation | InformationObject |
+| REL-048 | [[hasUnit\|hasUnit]] | QuantityValue | ControlledConcept |
+| REL-049 | [[hasQualityFlag\|hasQualityFlag]] | MeasurementResult | ControlledConcept |
+| REL-050 | [[withinLimit\|withinLimit]] | Observation | Constraint |
+| REL-051 | [[violatesLimit\|violatesLimit]] | Observation | Constraint |
+| REL-052 | [[manifestsAs\|manifestsAs]] | State | Symptom |
+| REL-053 | [[indicates\|indicates]] | Symptom | State |
+| REL-054 | [[precursorOf\|precursorOf]] | Observation | Event |
+| REL-055 | [[correlatedWith\|correlatedWith]] | Entity | Entity |
+| REL-056 | [[causedBy\|causedBy]] | Event | Entity |
+| REL-057 | [[contributesTo\|contributesTo]] | Entity | Event |
+| REL-058 | [[supportsCause\|supportsCause]] | Evidence | CauseHypothesis |
+| REL-059 | [[contradictsCause\|contradictsCause]] | Evidence | CauseHypothesis |
+| REL-060 | [[riskFactorFor\|riskFactorFor]] | Entity | Risk |
+| REL-061 | [[mitigatedBy\|mitigatedBy]] | Risk | Action |
+| REL-062 | [[hasDefect\|hasDefect]] | CastingPart | CastingDefect |
+| REL-063 | [[affectsCharacteristic\|affectsCharacteristic]] | CastingImperfection | CriticalCharacteristic |
+| REL-064 | [[resultsInNonconformance\|resultsInNonconformance]] | CastingImperfection | Nonconformance |
+| REL-065 | [[triggersContainment\|triggersContainment]] | Nonconformance | ContainmentAction |
+| REL-066 | [[correctedBy\|correctedBy]] | ConfirmedCause | CorrectiveAction |
+| REL-067 | [[preventedBy\|preventedBy]] | FailureMode | PreventiveAction |
+| REL-068 | [[failureOf\|failureOf]] | FailureEvent | Asset |
+| REL-069 | [[hasFailureMode\|hasFailureMode]] | AssetType | FailureMode |
+| REL-070 | [[realizesFailureMode\|realizesFailureMode]] | FailureEvent | FailureMode |
+| REL-071 | [[repairedBy\|repairedBy]] | FailureEvent | MaintenanceExecution |
+| REL-072 | [[causesDowntime\|causesDowntime]] | Event | DowntimeEvent |
+| REL-073 | [[constrains\|constrains]] | Constraint | Entity |
+| REL-074 | [[satisfiesRequirement\|satisfiesRequirement]] | Entity | Requirement |
+| REL-075 | [[violatesRequirement\|violatesRequirement]] | Entity | Requirement |
+| REL-076 | [[describes\|describes]] | KnowledgeArtifact | Entity |
+| REL-077 | [[asserts\|asserts]] | KnowledgeArtifact | KnowledgeClaim |
+| REL-078 | [[supportedBy\|supportedBy]] | Assertion | Evidence |
+| REL-079 | [[derivedFromSource\|derivedFromSource]] | InformationObject | KnowledgeArtifact |
+| REL-080 | [[generatedBy\|generatedBy]] | InformationObject | ProcessExecution |
+| REL-081 | [[attributedTo\|attributedTo]] | InformationObject | Person |
+| REL-082 | [[approvedBy\|approvedBy]] | InformationObject | Person |
+| REL-083 | [[supersedes\|supersedes]] | InformationObject | InformationObject |
+| REL-084 | [[validInContext\|validInContext]] | Assertion | ValidityContext |
+| REL-085 | [[restrictedBy\|restrictedBy]] | InformationObject | AccessPolicy |
+| REL-086 | [[recommends\|recommends]] | Recommendation | Action |
+| REL-087 | [[basedOn\|basedOn]] | Recommendation | Evidence |
+| REL-088 | [[constrainedBy\|constrainedBy]] | Recommendation | Constraint |
+| REL-089 | [[impactsObjective\|impactsObjective]] | Action | Objective |
+| REL-090 | [[impactsKPI\|impactsKPI]] | Action | KPI |
+| REL-091 | [[hasExpectedValue\|hasExpectedValue]] | Recommendation | QuantityValue |
+| REL-092 | [[hasActualOutcome\|hasActualOutcome]] | Action | Outcome |
+| REL-093 | [[decidedBy\|decidedBy]] | Decision | Person |
+| REL-094 | [[implementsDecision\|implementsDecision]] | Action | Decision |
+| REL-095 | [[feedbackOn\|feedbackOn]] | Feedback | InformationObject |
+| REL-096 | [[acceptedBy\|acceptedBy]] | Recommendation | Person |
+| REL-097 | [[rejectedBy\|rejectedBy]] | Recommendation | Person |
+| REL-098 | [[generalizedFrom\|generalizedFrom]] | BestPractice | Outcome |
+| REL-099 | [[specializedFor\|specializedFor]] | OperatingGuidance | ValidityContext |
+| REL-100 | [[reusableAt\|reusableAt]] | BestPractice | Entity |
+| REL-101 | [[invalidatedBy\|invalidatedBy]] | Assertion | Evidence |
+| REL-102 | [[updatedBy\|updatedBy]] | InformationObject | GraphChangeSet |
+| REL-103 | [[hasProvenance\|hasProvenance]] | Entity | AuditRecord |
+| REL-104 | [[hasConfidence\|hasConfidence]] | Assertion | ConfidenceAssessment |
+| REL-105 | [[usesModelVersion\|usesModelVersion]] | Prediction | ModelVersion |
+| REL-106 | [[explainedBy\|explainedBy]] | Prediction | Explanation |
+| REL-107 | [[subjectToGuardrail\|subjectToGuardrail]] | Agent | Guardrail |
+| REL-108 | [[hasOwner\|hasOwner]] | Entity | Role |
+| REL-109 | [[hasValidityPeriod\|hasValidityPeriod]] | InformationObject | TimeInterval |
+| REL-110 | [[targetsSituation\|targetsSituation]] | Recommendation | State |
+| REL-111 | [[requiresApproval\|requiresApproval]] | Action | Role |
+| REL-112 | [[hasEscalationRule\|hasEscalationRule]] | OperatingGuidance | EscalationRule |
+| REL-113 | [[learnedFrom\|learnedFrom]] | LearningCandidate | KnowledgeArtifact |
+| REL-114 | [[promotedTo\|promotedTo]] | LearningCandidate | OperatingGuidance |
+| REL-115 | [[hasLifecycleState\|hasLifecycleState]] | KnowledgeArtifact | KnowledgeLifecycleState |
+| REL-116 | [[hasAnswerCitation\|hasAnswerCitation]] | Answer | AnswerCitation |
+| REL-117 | [[answersQuestion\|answersQuestion]] | Answer | CompetencyQuestion |
+| REL-118 | [[detectsGap\|detectsGap]] | Answer | KnowledgeGap |
+| REL-119 | [[hasSourceReliability\|hasSourceReliability]] | KnowledgeArtifact | SourceReliabilityAssessment |
+| REL-120 | [[hasApplicability\|hasApplicability]] | OperatingGuidance | ApplicabilityAssessment |
