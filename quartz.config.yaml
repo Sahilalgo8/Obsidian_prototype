@@ -7,7 +7,7 @@ configuration:
   analytics:
     provider: null
   locale: en-US
-  baseUrl: localhost
+  baseUrl: sahilalgo8.github.io/Obsidian_prototype
   ignorePatterns:
     - private
     - templates
