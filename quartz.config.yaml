@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: Waupaca Enterprise Brain
+  pageTitle: Enterprise Brain
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true

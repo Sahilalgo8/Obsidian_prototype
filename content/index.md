@@ -1,5 +1,5 @@
 ---
-title: Waupaca Enterprise Brain — Modules
+title: Enterprise Brain — Modules
 ---
 
 # Modules
